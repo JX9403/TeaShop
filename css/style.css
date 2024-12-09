@@ -1,0 +1,126 @@
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tea-art-section {
+  padding: 60px 0;
+}
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+#productCarousel .carousel-control-prev,
+#productCarousel .carousel-control-next {
+  width: 5%;
+}
+#productCarousel .carousel-control-prev-icon,
+#productCarousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.tea-philosophy {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0;
+}
+
+.tea-philosophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tea-philosophy .container {
+  position: relative;
+  z-index: 1;
+}
+
+.tea-philosophy h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.tea-philosophy .lead {
+  font-size: 1.25rem;
+}
+
+.tea-philosophy .btn-outline-light {
+  border-width: 2px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.tea-philosophy .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .tea-philosophy {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .tea-philosophy .col-lg-6:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.news-card {
+  margin-bottom: 30px;
+}
+
+.news-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.primary-color {
+  color: #7aa640;
+}
+
+.btn-tea {
+  background-color: #7aa640;
+  color: white;
+  border: none;
+}
+
+.btn-tea:hover {
+  background-color: #45a049;
+  color: white;
+}
+.two-line {
+  width: 100%; /* Điều chỉnh độ rộng theo yêu cầu */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.5em; /* Chiều cao dòng */
+  max-height: 3em; /* Giới hạn chiều cao trong 2 dòng */
+  -webkit-line-clamp: 2; /* Giới hạn số dòng */
+}
